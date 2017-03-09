@@ -6,6 +6,7 @@ CACHE:
 programmer.jpg
 index.html
 bird.jpg
+bootstrap.min.css
 
 # Resources that require the user to be online.
 NETWORK:
