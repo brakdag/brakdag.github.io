@@ -43,6 +43,7 @@
     appId      : '282218038878375',
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
+
     xfbml      : true,  // parse social plugins on this page
     version    : 'v2.8' // use graph api version 2.8
   });
@@ -78,10 +79,10 @@
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
+    FB.api('me?locale=es_LA&fields=name,email', function(response) {
       console.log('Successful login for: ' + JSON.stringify(response));
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!' + 'tu id es:' + response.id ;
+        'Thanks for logging in, ' + response.name + '!' + 'tu id es:' + response.id + ' tu email es' + response.email;
     });
   }
 </script>
