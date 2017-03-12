@@ -79,10 +79,11 @@
   // successful.  See statusChangeCallback() for when this call is made.
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('me?locale=es_LA&fields=name,email', function(response) {
+    FB.api('me?locale=es_LA&fields=name,email,picture', function(response) {
       console.log('Successful login for: ' + JSON.stringify(response));
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!' + 'tu id es:' + response.id + ' tu email es' + response.email;
+       $('#imagen').attr("src", response.picture.data.url);
     });
   }
 </script>
@@ -99,6 +100,7 @@
 <div id="status">
 </div>
 
+<img id="imagen">
 </body>
 </html>
 
