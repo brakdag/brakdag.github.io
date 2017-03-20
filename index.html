@@ -31,20 +31,6 @@
 }(document, 'script', 'facebook-jssdk'));
 
 
-function foto(user){
-FB.api(
-    "/" + user +"/picture",
-    function (response) {
-      if (response && !response.error) {
-        document.write(response);/* handle the result */
-      }
-    }
-
-};
-
-);
-
-
 
 </script>
 
