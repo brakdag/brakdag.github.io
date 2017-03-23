@@ -70,9 +70,9 @@ function exportar(data) {
 
 	$("#boton1").click(function(){
 	var URLactual = window.location;
-		if (URLactual!="https://brakdag.github.io/temp/ml.html");
+		if (URLactual!="https://brakdag.github.io/temp/ml.html"){
 					$("#q").val("");
-
+}
 		url_call1 = "https://api.mercadolibre.com/sites/MLA/search?q="+ $("#q").val() +"&limit=1";
 		url_call = "https://api.mercadolibre.com/sites/MLA/search?q="+ $("#q").val() +"&limit=200&offset=";
 		$("#q").hide('fast');
