@@ -2,62 +2,48 @@
 <html lang="es" id="app">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="eyAIfN9ukwuxjrt7EUKT0Qu_dme6nnpCFhWW2hIlSGs" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="https://brakdag.gibhub.io" />
 	<meta name="twitter:title" content="brakdag" />
 	<meta name="twitter:description" content="Developer" />
 	<meta name="twitter:image" content="img/bird.jpg" />
-
 	<meta property="og:type"               content="image/jpeg" />
 	<meta property="og:image"              content="img/bird.jpg" />
 	<meta property="og:image:width"        content="186"/> 
 	<meta property="og:image:heigth"        content="186"/>
 	<meta property="og:title"              content="brakdag" />
 	<meta property="og:description"        content="Developer" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{infos.about.name}}</title>
+    <title>{{infos.about.name}}</title>
 </head>
 <body>
 	<div class="bgimg">
 	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.8&appId=1846077152299073";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
-</br></br></br></br>
-</br></br></br></br>
-
+	</br></br></br></br></br></br></br></br>
 	<div class="container">         
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<img src="{{infos.about.img}}" async class="img-circle centrado">
-
-</br></br>
-<h3><div class="label label-success text-center "><span class="octicon octicon-person"></span>{{infos.about.name}}</div></h3>
+				</br></br>
+				<h3><div class="label label-success text-center "><span class="octicon octicon-person"></span>{{infos.about.name}}</div></h3>
 			</div>
 
 		</div>
 
-<div class="row">
+		<div class="row">
 			<div class="col-md-2 col-md-offset-4 text-center margin-top">
 				<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fbrakdag.github.io%2F&width=149&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId=1846077152299073" width="149" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><!---->
 			</div>
-				<div class="col-md-2  text-center margin-top">
-			<a href=" https://twitter.com/intent/tweet?url=http://brakdag.github.io/" class="twitter-share-button" data-show-count="false" style="border:none;overflow:hidden" >Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>	
-			</div></div>
+			<div class="col-md-2  text-center margin-top">
+					<a href=" https://twitter.com/intent/tweet?url=http://brakdag.github.io/" class="twitter-share-button" data-show-count="false" style="border:none;overflow:hidden" >Tweet</a>	
+			</div>
+		</div>
 	</div>
-	<div class="col-md-6 col-md-offset-3 col-sm-offet-0 col-sm-12 panel panel-info">
-					<a href="{{infos.about.contact}}">Contact Form </a>
 
-</br></br>			
+	<div class="col-md-6 col-md-offset-3 col-sm-offet-0 col-sm-12 panel panel-info">
+		<a href="{{infos.about.contact}}">Contact Form </a>
+		</br></br>			
 	</div>
 </div>
 </div>	
@@ -75,8 +61,10 @@ background-size: cover;
 }
 </style>
 <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/vue.min.js"></script>
 <script src="js/app.js"></script>	
+<script src="js/social.js"></script>
 </body>
 </html>
