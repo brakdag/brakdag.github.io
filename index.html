@@ -5,20 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="google-site-verification" content="eyAIfN9ukwuxjrt7EUKT0Qu_dme6nnpCFhWW2hIlSGs" />
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="brakdag.github.io" />
-	<meta name="twitter:title" content="Gustavo David Ferreyra" />
-	<meta name="twitter:description" content="Programmer skills C/C++/PASCAL/BASIC/JAVA/Javascript/JQuery/PHP/mySQL" />
-	<meta name="twitter:image" content="/img/bird.jpg" />
+	<meta name="twitter:site" content="{{infos.about.website}}" />
+	<meta name="twitter:title" content="{{infos.about.name}}" />
+	<meta name="twitter:description" content="{{infos.about.role}}" />
+	<meta name="twitter:image" content="{{infos.about.img}}" />
 
 	<meta property="og:type"               content="image/jpeg" />
-	<meta property="og:image"              content="img/bird.jpg" />
+	<meta property="og:image"              content="{{infos.about.img}}" />
 	<meta property="og:image:width"        content="186"/> 
 	<meta property="og:image:heigth"        content="186"/>
-	<meta property="og:title"              content=" {{infos.about.name}} , {{infos.about.firstname}}" />
-	<meta property="og:description"        content="Programmer skills C/C++/PASCAL/BASIC/JAVA/Javascript/JQuery/PHP/mySQL" />
+	<meta property="og:title"              content=" {{infos.about.name}}" />
+	<meta property="og:description"        content="{{infos.about.role}}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gustavo Ferreyra</title>
+	<title>{{infos.about.name}}</title>
 <style>
 	body,
 	html {
@@ -33,7 +33,9 @@
 	}
 
 </style>
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/vue.min.js"></script>
+<script src="js/app.js"></script>	
 </head>
 <body>
 	<div class="bgimg">
@@ -53,10 +55,10 @@
 	<div class="container">         
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="img/bird.jpg" async class="img-circle centrado">
+				<img src="{{infos.about.img}}" async class="img-circle centrado">
 
 </br></br>
-<h3><div class="label label-success text-center "><span class="octicon octicon-person"></span> Gustavo Ferreyra </div></h3>
+<h3><div class="label label-success text-center "><span class="octicon octicon-person"></span>{{infos.about.name}}</div></h3>
 			</div>
 
 		</div>
@@ -69,7 +71,7 @@
 			</div></div>
 	</div>
 	<div class="col-md-6 col-md-offset-3 col-sm-offet-0 col-sm-12 panel panel-info">
-					<a href="https://goo.gl/forms/AKLrSU7dYmtvFifw2">Formulario de Contacto / Contact Form / Formulaire de contact / Kontakt Formular / 
+					<a href="{{infos.about.contact}}">Formulario de Contacto / Contact Form / Formulaire de contact / Kontakt Formular / 
 联系表</a>
 
 </br></br>			
@@ -83,9 +85,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" media="none" onload="if(media!='all')media='all'">
 
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="js/vue.min.js"></script>
-<script src="js/app.js"></script>	
 
 </body>
 </html>

@@ -5,11 +5,11 @@
         "lastname": "Ferreyra",
         "img": "http://brakdag.github.io/img/bird.jpg",
         "role": "Developer",
-        "description": "nada",
+        "description": "just do it",
         "adress": "San Rafael Mendoza, Argentina",
         "mail": "brakdag@gmail.com",
-        "github": "https://github.com/brakdag",
-        "cv": "",
+        "github": "https://github.com/brakdag/",
+        "contact": "https://goo.gl/forms/AKLrSU7dYmtvFifw2",
         "website": "https://brakdag.github.io/"
     }
 }
