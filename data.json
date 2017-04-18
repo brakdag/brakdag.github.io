@@ -1,0 +1,14 @@
+{
+    "about": {
+        "name": "Ferreyra",
+        "firstname": "Gustavo David",
+        "img": "http://brakdag.github.io/img/bird.jpg",
+        "role": "Developer",
+        "description": "nada",
+        "adress": "San Rafael Mendoza, Argentina",
+        "mail": "brakdag@gmail.com",
+        "github": "https://github.com/brakdag",
+        "cv": "",
+        "website": "https://brakdag.github.io/"
+    }
+}
